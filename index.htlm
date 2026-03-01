@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>EuroBank Secure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-page" class="login-container">
+    <h1>🏦 EuroBank</h1>
+    <input type="text" id="rib" placeholder="Entrez votre RIB">
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="login()">Se connecter</button>
+</div>
+
+<div id="dashboard" class="hidden">
+    <header>
+        <h2>Bienvenue dans votre espace client</h2>
+        <p>Solde principal : <strong>1 900 000 €</strong></p>
+    </header>
+
+    <section class="accounts">
+        <div class="card">Épargne : 70 000 €</div>
+        <div class="card">Économies : 25 000 €</div>
+        <div class="card">Dépenses : 15 000 €</div>
+        <div class="card">Appartement : 1 600 €</div>
+        <div class="card">Éducation : 1 500 €</div>
+    </section>
+
+    <section class="bank-card">
+        <h3>💳 Carte Bancaire</h3>
+        <p>RIB : FR76 3000 6000 0112 3456 7890 189</p>
+    </section>
+
+    <section class="subscriptions">
+        <h3>📺 Mes Abonnements</h3>
+        <div class="sub">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+            Netflix - 15 €
+        </div>
+        <div class="sub">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Movistar_logo.svg">
+            Movistar - 30 €
+        </div>
+    </section>
+
+    <section class="history">
+        <h3>Historique des transactions</h3>
+        <ul>
+            <li>+20 000 € - Transfert reçu</li>
+            <li>-1 500 € - Appartement</li>
+            <li>-30 € - Movistar</li>
+            <li>-15 € - Netflix</li>
+            <li>+5 000 € - Affectueux mon amour ❤️</li>
+        </ul>
+    </section>
+
+    <button onclick="logout()" class="logout">Déconnexion</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
